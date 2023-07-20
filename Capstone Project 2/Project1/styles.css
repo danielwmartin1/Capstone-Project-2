@@ -1,0 +1,200 @@
+/*CSS Style-sheet*/
+  * {
+    box-sizing: border-box; 
+   }
+
+  body {
+    background-image: url(background-img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .gradient {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  body {
+    background-color: #000000;
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+   }
+
+  .container {
+    display: inline-block;
+    background-color: rgb(254, 83, 83);
+    border: 4px solid black;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding: 20px;
+    width: 60%;
+    box-shadow: 3px 3px hsla(221, 87%, 46%, 0.366);
+  }
+
+  h1 {
+    color: blue;
+    font-size: 4vw;
+    margin-bottom: 0.7rem;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Style Script', cursive;
+    text-shadow: 0 0 4px red, 0 0 10px blue;
+  }
+
+  p.note {
+    color: rgb(255, 240, 240);
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5vw;
+    text-align: justify;
+    text-indent: 1rem;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+
+  .button:link {
+    background-color: #d5cceb;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    border: 1px solid rgb(0, 0, 0);
+    font-size: 16px;
+  }
+  
+  .button:visited {
+    color: red;
+  }
+ 
+  .button:hover {
+    background-color: #ffaeae;
+    font-style: italic;
+    font-size: 18px;
+    border: 2px solid black;
+  }
+
+  .button:active {
+    color: blue;
+    text-transform: uppercase;
+    text-shadow: 3px 3px #ffaeae;
+  }
+
+  .image-container {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;    
+  }
+
+  .photo1 {
+    height: auto;
+    width: 40%;
+    border: 4px solid red;
+    
+  }
+  
+  .photo1, .photo2 {
+    border-radius: 50%;
+  }
+
+  .photo1:hover {
+    box-shadow: 12px 12px 2px 1px rgba(255, 30, 30, 0.3);
+  }
+
+  .photo2 {
+    height: auto;
+    width: 60%;
+    border: 6px rgb(0, 42, 255) double;
+  }
+
+  .photo2:hover {
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.3);
+  }  
+
+
+  #bottom-note {
+    margin-top: 30px;
+  }
+
+  .apology {
+    background-color: rgb(249, 196, 127);
+    color:black;
+    font-size: 14px;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    text-indent: 1rem;
+  }
+
+  footer {   
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    font-size: 18px;
+    color: rgb(255, 0, 0) ;
+    text-shadow: 0 0 4px rgb(0, 0, 255), 0 0 10px rgb(255, 0, 0);
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Style Script', cursive;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  footer > p {
+    font-size: 40px
+  }
+
+  /*Media Queries*/
+  @media (max-width: 768px) {
+
+    h1 {
+      color: #333;
+      font-size: 24px;
+      font-family:  sans-serif;
+      font-family: 'Dancing Script', cursive;
+      font-family: 'Style Script', cursive;
+    }
+  
+
+    .btn:hover {
+      background-color: #ffaeae;
+      font-style: italic;
+      font-size: 16px;
+      border: 2px solid black;
+    }
+
+    .note {
+      font-size: 14px;
+    }
+
+    .btn {
+      font-size: 14px;
+    } 
+
+    .image-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;;
+      justify-items: center;
+      padding-top: 2rem;
+    }
+
+    .photo1 {
+      height: auto;
+      width: 25%;
+    }
+    .photo2 {
+      height: auto;
+      width: 35%;
+    }
+    
+    .apology {
+      font-size: 12px;
+    }
+  }
